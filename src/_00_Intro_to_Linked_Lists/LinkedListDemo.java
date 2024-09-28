@@ -32,6 +32,21 @@ public class LinkedListDemo {
          * 
          */
 
+    	LinkedList<Integer> surge = new LinkedList<Integer>();
+    	surge.add(200);
+    	surge.add(250);
+    	surge.remove(1);
+    	surge.add(201);
+    	surge.add(100);
+    	surge.print();
+    	
+    	Node<Integer> gam = surge.getHead();
+    	for(int i=0;i<surge.size();i++) {
+    		gam.setValue(gam.getValue()*2);
+    		gam = gam.getNext();
+    	}
+    	surge.print();
+    	
     }
 
 }
