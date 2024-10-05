@@ -47,6 +47,14 @@ public class LinkedListDemo {
     	}
     	surge.print();
     	
+    	int[] gamin = {0,0,1,0};
+    	for(int i=0;i<4;i++) {
+    		if(gamin[i] == 1) {
+    			break;
+    		}
+    		System.out.println(gamin[i]);
+    	}
+    	
     }
 
 }
