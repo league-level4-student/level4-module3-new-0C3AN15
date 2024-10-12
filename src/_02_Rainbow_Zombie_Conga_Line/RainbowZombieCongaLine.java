@@ -103,7 +103,12 @@ public class RainbowZombieCongaLine {
      * color to the end of the line.
      */
     public void rainbowBrains(Zombie dancer) {
+    	congaLine.setHead(new Node<Zombie>(dancer));
     	
+    	for(int i=0;i<zombieHats.length;i++) {
+    		Zombie temp = new Zombie(zombieHats[i]);
+    		congaLine.add(temp);
+    	}
     }
 
     public LinkedList<Zombie> getCongaLine() {
