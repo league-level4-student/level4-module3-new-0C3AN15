@@ -31,7 +31,42 @@ public class AVLTreeDemo {
      */
 
     public static void main(String[] args) {
-
+    	
+    	BinaryTree<Integer> ch1129 = new BinaryTree<Integer>();
+    	AVLTree<Integer> ch1130 = new AVLTree<Integer>();
+    	AVLTree<String> ch99 = new AVLTree<String>();
+    	
+    	int[] numb = {1129, 200, 201, 1, 1121};
+    	int[] numb2 = {5, 3, 4, 7, 1, 9, -1, 11, 1130, -200};
+    	String[] gaming = {"f","o","r","t","n","o"};
+    	String[] gaming3 = {"a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"};
+    	String[] gaming4 = {"f","o","r","t","f","o","r","t","n","i","t","e","g","a","m","i","n","g","","","","","","","",""};
+    	for(int i=0;i<gaming.length;i++) {
+    		ch1129.insert(numb2[i]);
+    		ch1130.insert(numb2[i]);
+    		//ch99.insert(gaming[i]);
+    	}
+    	for(int i=0;i<gaming4.length;i++) {
+    		ch99.insert(gaming4[i]);
+    		//ch99.insert("a");
+    	}
+    	
+//    	ch1129.delete(5);
+//    	ch1130.delete(5);
+//    	ch1129.delete(7);
+//    	ch1130.delete(7);
+    	//
+    	
+    	int[] remove = {};
+    	for(int i=0;i<remove.length;i++) {
+    		ch1129.delete(remove[i]);
+    		ch1130.delete(remove[i]);
+    	}
+    	
+    	ch1129.printHorizontal();
+    	ch1130.printHorizontal();
+    	ch99.printHorizontal();
+    	
     }
 
 }

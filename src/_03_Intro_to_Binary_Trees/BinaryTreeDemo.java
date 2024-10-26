@@ -49,20 +49,26 @@ public class BinaryTreeDemo {
     	Node<Integer> nah = ch1129.search(1129);
     	ch1129.search(1130);
     	
+//    	Node<Integer> root = ch1129.getRoot();
+//    	root.setValue(root.getValue()*2);
+//    	for(int i=0;i<ch1129.maxLevel(root);i++) {
+//    		Node<Integer> lef = root.getLeft();
+//    		Node<Integer> righ = root.getRight();
+//    		lef.setValue(lef.getValue()*2);
+//    		righ.setValue(righ.getValue()*2);
+//    		root.setLeft(lef);
+//    		root.setRight(righ);
+//    		lef = lef.getLeft(); //nowork
+//    		righ = righ.getRight();
+//    		//root = root.getLeft();
+//    		System.out.println(i);
+//    	}
+    	
     	Node<Integer> root = ch1129.getRoot();
-    	root.setValue(root.getValue()*2);
-    	for(int i=0;i<ch1129.maxLevel(root);i++) {
-    		Node<Integer> lef = root.getLeft();
-    		Node<Integer> righ = root.getRight();
-    		lef.setValue(lef.getValue()*2);
-    		righ.setValue(righ.getValue()*2);
-    		root.setLeft(lef);
-    		root.setRight(righ);
-    		lef = lef.getLeft(); //nowork
-    		righ = righ.getRight();
-    		//root = root.getLeft();
-    		System.out.println(i);
+    	for(int i=0;i<0;i++) {
+    		
     	}
+    	
     	ch1129.printVertical();
     	
     }
